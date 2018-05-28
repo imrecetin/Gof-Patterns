@@ -1,0 +1,17 @@
+Singleton is a creational design pattern that lets you ensure that a class has only one 
+instance and provide a global access point to this instance.
+
+1.Ensures that a class has only a single instance. 
+  The most common reason for this is to control some shared resource, for example, database.
+  
+2.Provides global access point to that instance. Sound like a global variable, right? 
+  But you can not make a read-only global variable. Anyone who can access it can also replace its value.
+  
+All singleton implementations share two common steps:
+
+** Making the default constructor private.
+** Creating a static creation method that will act as a constructor. 
+		This method creates an object using the private constructor and saves it in static variable or 
+		field. All following calls to this method return the cached object.
+		
+Identification: Singleton can be recognized by a static creational method, which returns same cached object.

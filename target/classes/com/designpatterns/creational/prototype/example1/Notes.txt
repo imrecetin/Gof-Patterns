@@ -1,0 +1,8 @@
+Prototype is a creational design pattern that lets you produce new objects by 
+copying existing ones without compromising their internals.
+
+The Prototype pattern delegates cloning process to objects themselves.
+Objects that can be cloned are called prototypes.
+
+All prototype classes should have a common interface that makes it 
+possible to copy objects even if their concrete classes are unknown.
