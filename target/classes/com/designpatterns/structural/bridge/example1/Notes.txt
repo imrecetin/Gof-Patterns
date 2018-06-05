@@ -1,0 +1,21 @@
+Bridge is a structural design pattern that lets you split a giant class or a set of 
+closely related classes into two separate hierarchies, 
+abstraction and implementation, which can be developed independently of each other.
+
+This problem happens each time we extend the class hierarchy into several independent dimensions.
+
+The Bridge pattern attempts to solve it by replacing inheritance with delegations. 
+You have to extract one of these "dimensions" into separate class hierarchy. 
+Original classes will contain a reference to an object of the new hierarchy, 
+instead of storing all of its state and behaviors inside of one class.
+
+The Bridge pattern splits the monolithic class into several class hierarchies, 
+one of which references the other ones. Classes in these hierarchies can be edited independently 
+from the other ones. It simplifies the support and minimizes a risk of breaking existing code.
+
+ When you need to extend a class in several orthogonal (independent) dimensions.
+ 
+Instead of growing a single hierarchy, Bridge pattern suggests to create a separate class hierarchy for 
+each dimension and link these hierarchies with a reference field.
+
+ When you need to be able to change implementation at runtime.

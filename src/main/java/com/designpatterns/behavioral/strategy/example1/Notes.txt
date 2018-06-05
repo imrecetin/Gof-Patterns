@@ -1,0 +1,23 @@
+Strategy is a behavioral design pattern that lets you define a family of algorithms, 
+encapsulate each one, and make them interchangeable. Strategy lets the algorithm 
+vary independently from the clients that use it.
+
+The Strategy pattern suggests to take a class that does something important 
+in a lot of different ways and extract all these algorithms into separate classes called strategies.
+The original class, called context, will receive a field for storing a reference to one of the strategies. 
+The context will delegate the work to a linked strategy instead of executing it on its own.
+
+The context will not be responsible for picking the appropriate algorithm for the job. 
+Instead, the client will pass a desired strategy to the context.
+
+Applicability
+
+	When you have an object that should be able to do the same task in lots of different ways.
+	When you have lots of similar classes, that differ with in the way the execute some behavior.
+	When you do not want to expose algorithm's implementation details to other classes.
+	An algorithm to be executed is selected by a monstrous conditional operator. Each branch of the conditional represents different algorithm.
+	
+Java 8 brought the support of lambda functions, which can serve as simpler alternatives to Strategy pattern.
+
+Identification: Strategy pattern can be recognized by a method that lets nested object do the actual work, 
+				as well as the setter that allows replacing that object with a different one.

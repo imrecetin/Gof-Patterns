@@ -1,0 +1,26 @@
+Memento is a behavioral design pattern that lets you capture the object's internal state without exposing 
+its internal structure, so that the object can be returned to this state later.
+
+Let's consider the actual "backups" of the Editor's state. 
+Even the most primitive editor must have several fields for storing its data, such as the actual text, 
+cursor coordinates, current scroll position, etc. In order to make a backup, you have to 
+record all these values and put them into some container.
+
+The Memento pattern delegates creating state snapshots to the actual owner of that state, 
+the Originator object. Hence, instead of other objects trying to copy the Editor's state 
+from the "outside," the Editor itself can make the snapshot since it has full access to its own state.
+
+The pattern provides a special object for storing a snapshot of the object's state, called Memento. 
+The memento's content is not accessible to any other object except the one that produced it. 
+Other objects would communicate with mementos using a limited interface, which allows no more than 
+fetching a snapshot meta data, such as a creation time, label, etc.
+
+Applicability
+
+ 	When you need to make snapshots of some objects in order to restore their state later.
+ 	When direct access to the object fields/getters/setters violates its encapsulation.
+ 	
+Usage examples: 
+	The Memento principle can be achieved using the serialization, which is quite common in Java. 
+	While it's not only and the most efficient way to make state snapshots, it still allows storing 
+	state backups while protecting the originator's structure from other objects.

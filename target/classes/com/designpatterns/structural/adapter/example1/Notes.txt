@@ -1,0 +1,13 @@
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+You can create an Adapter. It is a special object that converts calls sent by one object to the format that another object can understand. 
+Adapter wraps one of the objects to hide the complexity of conversion happening behind the scenes.
+
+Sometimes it is even possible to create two-way adapters that convert calls in both directions.
+
+Real-World Analogy
+
+Power plugs and sockets in different countries
+When you fly from the US to Europe for the first time, you may get a surprise when you try to charge your laptop. 
+The power plug & sockets standards vary between countries. That is why your US plug will not fit the German socket.
+The problem can be solved by a power plug adapter that has the American-style socket and the European-style plug.

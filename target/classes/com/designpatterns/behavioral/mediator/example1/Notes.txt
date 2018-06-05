@@ -1,0 +1,24 @@
+Mediator is a behavioral design pattern that lets you define an object that 
+encapsulates relations between a set of objects to make them independent of each other.
+
+The Mediator pattern prevents direct communications between individual components. 
+Instead, they send requests to a mediator object that knows whom to direct these requests.
+Components lose dozens of dependencies and become related only to the mediator object.
+
+Air traffic control
+
+	The control tower at a controlled airport demonstrates the Mediator pattern very well. 
+	The pilots of the planes approaching or departing the terminal area communicate with 
+	the tower rather than explicitly communicating with each other. The constraints on 
+	who can take off or land are enforced by the tower. It is important to note that the 
+	tower does not control the whole flight. It exists only to enforce constraints in the terminal area.
+	
+Applicability
+
+	When chaotic dependencies between components turn a simple change in one component into a series of changes in all components.
+		Mediator extracts relations between classes into a separate class 
+		making changes to one component isolated from the rest of the code.
+		
+	When you have to create tons of component subclasses just to use the same components in different contexts.
+		Mediator encapsulates relations between components. Therefore, it is enough to create 
+		a new mediator subclass to define a new set of relations between the same components.

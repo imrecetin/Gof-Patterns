@@ -1,0 +1,20 @@
+Observer is a behavioral design pattern that lets you define a one-to-many dependency between objects 
+so that when one object changes state, all its dependents are notified and updated automatically.
+
+Think about it ;
+	Thus, we have a conflict: either customer wastes resources 
+	on periodic checks or the store itself wastes resources notifying wrong customers.
+	
+Applicability
+
+	When changes to the state of one object may require changing other objects, 
+	but the are unknown beforehand or change dynamically.
+	
+		For example, you are developing a GUI framework focused on buttons. 
+		You want your clients to be able to hook some custom code to your 
+		buttons so that it will fire whenever users press the button.
+		
+	Some objects should observe the others, but only for a limited time or in specific cases.
+	
+Identification
+	The pattern can be recognized by subscription methods, that store objects in a list and by calls to the update method issued to objects in that list.

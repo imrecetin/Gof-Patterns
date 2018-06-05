@@ -1,0 +1,29 @@
+Command is a behavioral design pattern that lets you turn a request into stand-alone object, 
+which can be used to parametrize objects with different requests, queue or log requests, 
+and support undoable operations.
+
+The Command pattern suggests encapsulating requests into their very own objects called commands. 
+In case if the operation had any parameters, they become fields of a new command class.
+
+
+It is easy to make various commands to follow common interface now that their primary method does not have any parameters. 
+Usually, a command interface has just one method that looks as execute(). Once the common interface is created, 
+you can make commands interchangeable in client code which used to be coupled to specific operations.
+
+Thus, command classes will become convenient middle layer between GUI and business logic classes. 
+And that is only a fraction of all Command's benefits!
+
+Applicability
+
+	When you want to parameterize objects with actions. For example, when you develop a user interface component, 
+	such as a menu, you want your users to be able to configure menu items with actions that will be fired when a menu item is clicked.
+
+	When you want to queue, schedule, or execute operations remotely.
+
+	When you need to be able to undo operations.
+
+Identification: 
+	The pattern is recognizable by behavioral methods in an abstract/interface type (sender) 
+	which invokes a method in an implementation of a different abstract/interface type (receiver) 
+	which has been encapsulated by the command implementation during its creation. 
+	Command classes are usually limited to specific actions.

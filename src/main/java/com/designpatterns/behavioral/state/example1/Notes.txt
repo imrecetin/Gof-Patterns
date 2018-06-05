@@ -1,0 +1,24 @@
+State is a behavioral design pattern that allows an object to alter its behavior 
+when its internal state changes. The object will appear to change its class.
+
+The State pattern is closely related to the concept of Finite State Machine.
+
+The context will contain a reference to a state object that represents its current state. 
+Instead of performing a behavior on its own, the context will delegate the execution to a state object.
+
+To change the context's state, one would pass another state object to the context. But to make states interchangeable, 
+all states classes must follow the common interface, and the context must communicate with its state object via that interface.
+
+The described structure may look like the Strategy pattern, but there is one key difference. 
+In the State pattern, the context, as wells as particular states, can initiate the transitions 
+from one state to another.
+
+Applicability
+
+	When you have an object that behaves differently depending on its current state. The number of states is big. The state-related code changes frequently.
+	When a class is polluted with massive conditionals that alter method's behavior according to the current values of the class's fields.
+	When you have a lot of duplicate code across similar states and transitions of the conditional-based state machine.
+
+Usage examples: The State pattern is commonly used in Java to convert massive switch-base state machines into the objects.
+
+Identification: State pattern can be recognized by methods that change their behavior depending on the objects' state, controlled externally.

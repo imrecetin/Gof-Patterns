@@ -1,0 +1,25 @@
+Chain of Responsibility is a behavioral design pattern that lets you avoid coupling the sender of a request 
+to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects 
+and pass the request along the chain until an object handles it.
+
+
+The pattern suggests to link these handler objects into a chain. 
+Each handler will get a field for storing a reference to the next handler in the chain. 
+Whenever a handler receives a request, it may pass it to the following handler on the chain. 
+The request would travel along the chain until all handlers had a chance to process it.
+
+For instance, when a user clicks a button, the event is propagated through a chain of components 
+that starts with the button, goes along its parents, like forms and panels, and ends up with the 
+main application window. The event is processed by the first component in that chain capable of handling it. 
+This example is also noteworthy because it shows that a chain can always be extracted from a tree structure.
+
+It is crucial that all handler classes follow the same interface. 
+
+Applicability
+
+When a program has several handlers capable of processing different requests, 
+but you do not know in advance what type of request to expect.
+
+When it is important to execute handlers in a certain order.
+
+When a set of objects handling requests and their order should change dynamically.

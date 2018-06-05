@@ -1,0 +1,9 @@
+Composite is a structural design pattern that lets you compose objects into tree 
+structures and allow clients to work with these structures as if they were individual objects.
+
+The composite pattern makes sense only when your business model can be represented as a tree
+
+The Composite pattern suggests treating all different Products and Boxes through a common interface that has a method getPrice().
+
+Applicability
+When you have to implement a tree-like structure that has simple elements and containers.

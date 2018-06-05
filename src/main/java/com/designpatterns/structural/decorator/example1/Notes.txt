@@ -1,0 +1,25 @@
+Decorator is a structural design pattern that lets you attach new behaviors 
+to objects by placing them inside wrapper objects that contain these behaviors.
+
+You have to add and remove responsibilities from an object dynamically, 
+but do it in a way so that it stay compatible with the rest of application's code.
+
+Real-World Analogy
+
+Clothing
+
+Wearing clothes is an example of using decorators. 
+When you are cold, you wrap yourself with a sweater. 
+If it is still cold, you can wear a jacket on top. 
+If it is raining, you can put on a raincoat.
+
+All of these garments "extend" your basic behavior, 
+but are not part of you. Therefore you can easily take them off 
+whenever you do not need them anymore.
+
+Applicability
+When you need to dynamically assign the behaviors to objects 
+without breaking the code that uses these objects.
+
+When it is not possible or awkward to 
+extend the object behavior with inheritance.
